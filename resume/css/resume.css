@@ -1,0 +1,443 @@
+body{
+    background-color: #4F6069;
+    font-family: "新細明體";
+}
+header{
+    background-color: #C1928E;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 80%;
+    position: fixed;
+    color: #011429;
+}
+nav{
+    position: fixed;
+    right: 20px;
+}
+nav ul{
+    list-style: none;
+    display: inline-flex;
+}
+nav li{
+    font-size: 24px;
+    float: left;
+}
+nav li a{
+    color: #011429;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+nav li a:hover{
+    color:white;
+    }
+section{
+    margin: 0px 50px 20px 50px;
+    position: relative;
+    top: 100px;
+    background-color: #954C50;
+    border-radius: 50px;
+    height: 2150px;
+    z-index: -1;
+}
+div.all{
+    padding: 100px 250px ;
+}
+div.aboutme{
+    padding: 100px;
+    background-image: url(../images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: 1800px 1000px;
+    border-radius: 50px;
+}
+div.aboutme table,tr,td{
+    position: relative;
+    font-size: 22pt;
+    width: 100%;
+    left: -200px;
+}
+div.aboutme td{
+    padding: 0px 10px 0px 25px;
+    width: 400px;
+}
+td.a{
+    font-weight: bolder;
+    font-size: 27pt;
+}
+img.me{
+    width: 350px;
+}
+div.school{
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #E9C8C4;
+    height: 600px;
+    border: 10px solid #F3E8CD;
+    border-radius: 50px;
+}
+div.school h1{
+    text-align: center;
+    font-size: 30pt;
+}
+.school{
+    margin:auto;
+    list-style: none;
+}
+.timeline{
+    padding: 100px, 20px;
+}
+.timeline li{
+    list-style: none;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    position: relative;
+}
+.timeline li:nth-child(odd){
+    float: left;
+    padding-right: 100px;
+}
+.timeline li:nth-child(even){
+    float: right;
+    padding-left: 100px;
+    transform: translateY(50%);
+}
+.timeline li:nth-child(odd)::after{
+    content: '';
+    position: absolute;
+    z-index: 0;
+    width: 1px;
+    top:0;
+    height: 100%;
+    background-color: #4F6069;
+    right: 0;
+}
+.timeline li:last-child::after{
+    height: 50%;
+}
+.timeline li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom:0;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #4F6069;
+    z-index: 2;
+}
+.timeline li:nth-child(odd)::before{
+    right: -10px;
+}
+.timeline li:nth-child(even)::before{
+    left: -10px;
+}
+.timeline a{
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    background-color: #C1928E;
+    border: 1px solid #954C50;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #888;
+}
+.timeline a:hover{
+    background-color: #954C50;
+}
+.timeline a:hover h2, 
+.timeline a:hover P{
+    color: #fff;
+}
+.timeline h2{
+    font-size: 23pt;
+    color: #000;
+    font-weight: 700;
+}
+.timeline p{
+    font-size: 20pt;
+    color: #000;
+    font-weight: 100;
+}
+.timeline h2::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100px;
+    background-color: #4f6069;
+    top:0;
+    bottom: 0;
+    margin: auto;
+}
+.timeline li:nth-child(odd) h2::after{
+    right: 0;
+}
+.timeline li:nth-child(even) h2::after{
+    left: 0;
+}
+
+div.skills{
+    position:absolute;
+    width: 35%;
+    margin-top: 30px;
+    padding: 5px;
+    background-color: #DCDBC9;
+    height: 700px;
+    border-radius: 50px;
+}
+div.skills h1{
+    text-align: center;
+    font-size: 30pt;
+}
+div.skills p{
+    margin-left: 30px;
+    font-size: 18pt;
+}
+.coll {
+    width: 70%;
+    background-color: #738972;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    border-radius: 10px;
+    position: relative;
+    left: 15%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.skill {
+    background-color: #40544B;
+    position: relative;
+    border-radius: 20px;
+    margin-bottom: 5%;
+  }
+  
+  #net {
+    width: 55%;
+    animation-name: skillnet;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+  
+  #word {
+    width: 75%;
+    animation-name: skillword;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+  
+  #art {
+    width: 82%;
+    animation-name: skillart;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+  
+  #video {
+    width: 50%;
+    animation-name: skillvideo;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+  
+@keyframes skillnet {
+    from {
+      width: 10%;
+    }
+    to {
+      width: 55%;
+    }
+  }
+  @keyframes skillword {
+    from {
+      width: 10%;
+    }
+    to {
+      width: 78%;
+    }
+  }
+  @keyframes skillart {
+    from {
+      width: 10%;
+    }
+    to {
+      width: 82%;
+    }
+  }
+  @keyframes skillvideo {
+    from {
+      width: 10%;
+    }
+    to {
+      width: 50%;
+    }
+  }
+
+  div.skills2{
+    position:absolute;
+    right: 245px;
+    width: 35%;
+    margin-top: 30px;
+    padding: 5px;
+    background-color: #DCDBC9;
+    height: 700px;
+    border-radius: 50px;
+}
+div.skills2 h1{
+    text-align: center;
+    font-size: 30pt;
+}
+div.skills2 p{
+    margin-left: 30px;
+    font-size: 18pt;
+}
+.coll2 {
+    width: 70%;
+    background-color: #AAC5B4;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    border-radius: 10px;
+    position: relative;
+    left: 15%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.skill2 {
+    background-color: #4F6069;
+    position: relative;
+    border-radius: 20px;
+    margin-bottom: 5%;
+  }
+  
+  #c {
+    width: 47%;
+    animation-name: skill2c;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+  
+  #java {
+    width: 68%;
+    animation-name: skill2java;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+  
+  #r {
+    width: 38%;
+    animation-name: skill2r;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+  
+  #sql {
+    width: 47%;
+    animation-name: skill2sql;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+
+  #html {
+    width: 72%;
+    animation-name: skill2html;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+  
+@keyframes skill2c {
+    from {
+      width: 10%;
+    }
+    to {
+      width: 47%;
+    }
+  }
+  @keyframes skill2java {
+    from {
+      width: 10%;
+    }
+    to {
+      width: 68%;
+    }
+  }
+  @keyframes skill2r {
+    from {
+      width: 10%;
+    }
+    to {
+      width: 38%;
+    }
+  }
+  @keyframes skill2sql {
+    from {
+      width: 10%;
+    }
+    to {
+      width: 47%;
+    }
+    
+  }
+  @keyframes skill2html {
+    from {
+      width: 10%;
+    }
+    to {
+      width: 72%;
+    }
+  }
+  .se2{
+    margin: 0px 50px 125px 50px;
+    position: relative;
+    top: 100px;
+    background-color: #954C50;
+    border-radius: 50px;
+    height: 1500px;
+    z-index: -1;
+  }
+
+  div.project{
+      position: absolute;
+      margin-top: 40px;
+      margin-left: 255px;
+      padding: 10px;
+      background-color: #738972;
+      border-radius: 50px;
+      text-align: center;
+      width: 71%;
+
+  }
+  .project h1{
+      font-size: 30pt;
+  }
+  .project img{
+      width: 570px;
+      border-radius: 20px;
+      border: 5px #C1928E dashed;
+      position: relative;
+      margin-top: 20px;
+  }
+  .pro1{
+      position: relative;
+      left: -300px;
+      font-size: 18pt;
+  }
+ .pro1 table,tr ,td{
+     position: relative;
+     left: 118px;
+ }
+ .pro1 td{
+     width: 570px;
+ }
+
+ footer{
+     background-color: #C1928E;
+     padding: 30px;
+     font-weight: 200;
+     text-align: center;
+ }
